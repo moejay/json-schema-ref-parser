@@ -20,6 +20,14 @@ var baseConfig = {
     // Tests
     'test/specs/**/*.js',
     {pattern: 'test/specs/**', included: false, served: true}
+  ],
+  plugins: [
+        'karma-mocha',
+        'karma-verbose-reporter',
+        'karma-coverage',
+        'karma-firefox-launcher',
+        'karma-chrome-launcher',
+        'karma-safari-launcher'
   ]
 };
 
